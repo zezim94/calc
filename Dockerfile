@@ -4,7 +4,7 @@ FROM php:8.1-apache
 RUN a2enmod rewrite
 
 # Copia o código PHP para o container
-COPY public_html/ /var/www/html/
+COPY interface_php/ /var/www/html/
 
 # Corrige permissões
 RUN chown -R www-data:www-data /var/www/html
